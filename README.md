@@ -1,6 +1,6 @@
 <!-- Link para CSS externo do Materialize para enfeitar um pouco isso aqui! -->
 <!-- MATERIALIZE: Compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href=".\src\utils\Materialize\css\materialize.min.css">
 <!-- Material-Icons -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
