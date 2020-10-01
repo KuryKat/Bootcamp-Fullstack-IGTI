@@ -1,10 +1,3 @@
-<!-- Link para CSS externo do Materialize para enfeitar um pouco isso aqui! -->
-<!-- MATERIALIZE: Compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<!-- Material-Icons -->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
 # Basic JavaScript Module
 This is the basic JavaScript module, in which the basics of JavaScript on the WEB were passed
 
@@ -49,7 +42,4 @@ Many people ask me this, I don't know exactly how to answer it, because I've nev
 
 > #### ``Thanks For Reading This "Article"!``
 
-<div style="font-size:1.5rem" class="center">
-
-    Copyright © 2020 KuryKat
-</div>
+>     Copyright © 2020 KuryKat

@@ -11,4 +11,4 @@ This repository was built with the intent of "documenting" my achievements and l
 
 ## More Soon... <img src="https://cdn.discordapp.com/emojis/755117407655428127.gif?v=1">
 
-    Copyright © 2020 KuryKat
+>     Copyright © 2020 KuryKat
