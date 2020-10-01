@@ -38,7 +38,7 @@ console.log("Hello World!") // => "Hello World!"
 ```
 
 ## "Why JavaScript?"
-Many people ask me this, I don't know exactly how to answer it, because I've never tried other languages ​​in depth like I tried JavaScript since 2017, I've played and made some systems with C #, and I really appreciate the language, but I believe that JavaScript is still better (without wanting to offend C #, I love this language) for its incredible level of programmatic abstraction (Thanks for teaching me that term [@Takasakiii](https://github.com/Takasakiii)) that allows us to create anything we need to carry out our needs (okay, that was kind of redundant, but who said that term is always bad?)
+Many people ask me this, I don't know exactly how to answer it, because I've never tried other languages ​​in depth like I tried JavaScript since 2017, I've played and made some systems with C#, and I really appreciate the language, but I believe that JavaScript is still better (without wanting to offend C#, I love this language) for its incredible level of programmatic abstraction (Thanks for teaching me that term <a href="https://github.com/Takasakiii" target="_blank" title="Takasaki's GitHub Profile" style="text-decoration:none">@Takasakiii</a>) that allows us to create anything we need to carry out our needs (okay, that was kind of redundant, but who said that term is always bad?)
 
 > #### ``Thanks For Reading This "Article"!``
 
