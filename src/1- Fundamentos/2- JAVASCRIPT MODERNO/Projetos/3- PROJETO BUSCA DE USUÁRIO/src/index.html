@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Material-Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Usuário</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="light-theme">
+
+    <nav>
+        <div class="nav-wrapper">
+            <ul class="right hide-on-med-and-down">
+                <li>Trocar de Tema:</li>
+                <li>
+                    <a src="#" id="themeButton" class="waves-effect waves-light btn">🌞 Tema Claro</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="search">
+        <div class="row">
+            <form id="nameSearch" class="col s12">
+                <div id="searchBar" class="row">
+                    <h1 style="text-align: center;">Pesquisa de Usuários</h1>
+                    <div id="searchPosition" class="input-field col s12">
+                        <div id="searchBarInput" class="input-field col s10">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="searchInput" type="text" class="validate">
+                            <label for="searchInput">Nome</label>
+                        </div>
+                        <div class="input-field col s2">
+                            <a id="searchButton" class="waves-effect waves-light btn disabled"><i class="material-icons right">search</i>BUSCAR</a>
+                        </div>
+                    </div>
+                    <div class="col s12 title" id="divFiltro"></div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="container col s12">
+                <div class="result-list col s6" id="userResults">
+                    <div class="title">Nenhum Usuário Filtrado</div>
+                    <div id="results"></div>
+                </div>
+                <div class="result-list col s6" id="summary">
+                    <div class="title">Nada Para ser Exibido</div>
+                    <div id="summaryContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TEMP ARCHIVE FOR TESTS -->
+    <script src="./js/users.js"></script>
+    <!-- TEMP ARCHIVE FOR TESTS -->
+
+
+    <script refer src="./js/index.js"></script>
+</body>
+
+</html>
