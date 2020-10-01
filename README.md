@@ -1,11 +1,3 @@
-<!-- Link para CSS externo do Materialize para enfeitar um pouco isso aqui! -->
-<!-- MATERIALIZE: Compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<!-- Material-Icons -->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-<body>
-
 # Source Bootcamp Fullstack IGTI
 Open source code of my projects during my Fullstack Bootcamp (provided by [IGTI](https://www.igti.com.br/))
 
@@ -18,6 +10,5 @@ Hello, you must already know me, I am KuryKat, an independent developer, looking
 This repository was built with the intent of "documenting" my achievements and learning from Bootcamp, I have a repository for everything I learn, but I keep it private (for now, I intend to organize them and make them public)
 
 ## More Soon... <img src="https://cdn.discordapp.com/emojis/755117407655428127.gif?v=1">
-
 
     © 2020 Copyright KuryKat  
