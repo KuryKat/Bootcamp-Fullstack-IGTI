@@ -1,0 +1,73 @@
+/*
+
+        FORMATAÇÕES GLOBAIS
+
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*
+
+        FORMATAÇÕES DE LAYOUT
+
+*/
+
+#container {
+    border: 10px solid red;
+    border-radius: 1em;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+#container>div {
+    padding: 20px;
+}
+
+#container>#colorNames>span {
+    display: block;
+}
+
+#container>#UIs>div>form {
+    background-color: lightblue;
+}
+
+
+/* 
+
+        FORMATAÇÕES PARA INTERAÇÃO COM MOUSE
+
+*/
+
+#container>#colorNames>#R,
+#container>#colorNames>#G,
+#container>#colorNames>#B {
+    color: white;
+    padding: 1px;
+    background-color: #000;
+}
+
+#container>#colorNames>#R:hover {
+    color: rgb(255, 0, 0);
+    font-size: 103%;
+}
+
+#container>#colorNames>#G:hover {
+    color: rgb(0, 255, 0);
+    font-size: 103%;
+}
+
+#container>#colorNames>#B:hover {
+    color: rgb(0, 0, 255);
+    font-size: 103%;
+}

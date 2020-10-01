@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Simulador de Cores</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="colorNames">
+            <span id="R">(R) RED</span>
+            <span id="G">(G) GREEN</span>
+            <span id="B">(B) BLUE</span>
+        </div>
+        <div id="ranges">
+            <div>
+                <form>
+                    <input type="range" name="redRange" id="redRange" min="0" max="255" value="0">
+                </form>
+            </div>
+            <div>
+                <form>
+                    <input type="range" name="greenRange" id="greenRange" min="0" max="255" value="0">
+                </form>
+            </div>
+            <div>
+                <form>
+                    <input type="range" name="blueRange" id="blueRange" min="0" max="255" value="0">
+                </form>
+            </div>
+        </div>
+
+        <div id="UIs">
+            <div>
+                <form>
+                    <input type="text" disabled="disabled" id="redUI">
+                </form>
+            </div>
+            <div>
+                <form>
+                    <input type="text" disabled="disabled" id="greenUI">
+                </form>
+            </div>
+            <div>
+                <form>
+                    <input type="text" disabled="disabled" id="blueUI">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script defer src="./js/index.js"></script>
+</body>
+
+</html>
