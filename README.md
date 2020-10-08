@@ -9,6 +9,14 @@ Hello, you must already know me, I am KuryKat, an independent developer, looking
 ## About this
 This repository was built with the intent of "documenting" my achievements and learning from Bootcamp, I have a repository for everything I learn, but I keep it private (for now, I intend to organize them and make them public)
 
+## Bootcamp modules
+- [x] Fundamentals
+- [ ] API development
+- [ ] Frontend with React
+- [ ] Data persistence, Code Versioning and Deployment
+- [ ] Final Challenge
+
+
 ## More Soon... <img src="https://cdn.discordapp.com/emojis/755117407655428127.gif?v=1">
 
 >     Copyright © 2020 KuryKat
