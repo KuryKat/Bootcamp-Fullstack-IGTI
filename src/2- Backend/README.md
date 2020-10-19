@@ -17,6 +17,7 @@ This is the "API creation module", it has more to do with backend and server cre
   - [Routes](Exercícios/2-%20Express/3-%20Routes/)
   - [Error Handling](Exercícios/2-%20Express/4-%20Tratamento%20de%20Erros/)
   - [Log Recording](Exercícios/2-%20Express/5-%20Gravação%20de%20Logs/)
+- [API Creation: "My-Bank-API"](Exercícios/3-%20My-Bank-API/)
 
 > #### ``Thanks For Reading This "Article"!``
 
