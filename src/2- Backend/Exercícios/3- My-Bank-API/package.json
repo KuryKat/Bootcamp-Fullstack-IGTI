@@ -1,10 +1,10 @@
 {
-    "name": "3--my-bank-api",
+    "name": "my-bank-api",
     "version": "1.0.0",
-    "description": "",
+    "description": "A Simple API",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "node index.js"
     },
     "author": "KuryKat",
     "license": "MIT",
