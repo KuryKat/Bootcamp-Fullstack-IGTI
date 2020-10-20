@@ -5,8 +5,8 @@ const swaggerDocument = {
         "version": "1.0.0",
         "title": "My-Bank-API",
         "license": {
-            "name": "MIT",
-            "url": "https://www.mit.edu/~amini/LICENSE.md"
+            "name": "MIT License © 2020 KuryKat",
+            "url": "http://localhost:3000/license.html"
         }
     },
     "host": "localhost:3000",
