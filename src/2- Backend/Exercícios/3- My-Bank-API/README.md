@@ -15,14 +15,8 @@ It is as simple as it looks, starting from the point where you should already kn
 - Open "My-Bank-API" folder in your favorite Shell 
 - Run ``npm install`` 
 - Run ``npm start``
-- Create The following requests at Insomnia:
-  - **POST** in URI `"http://localhost:3000/account/create"`
-  - **GET** in URI `"http://localhost:3000/account/search/all"`
-  - **GET** in URI `"http://localhost:3000/account/search/:id"`
-  - **DELETE** in URI `"http://localhost:3000/account/delete/:id"`
-  - **PUT** in URI `"http://localhost:3000/account/edit/:id"`
-  - **PATCH** in URI `"http://localhost:3000/account/updateBalance/:id"`
-- Run That requests, yay! 😄🙌
+- Open This [Link](http://localhost:3000/docs)
+  - Read The Docs , yay! 😄🙌
 
 
 
