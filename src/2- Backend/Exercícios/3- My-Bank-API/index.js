@@ -3,12 +3,15 @@ import { logger } from './utils/logger.js'
 import { fileLogger } from './utils/fileLogger.js'
 import accountsRouter from './routes/accounts.js'
 import { promises } from 'fs';
+import swaggerUI from 'swagger-ui-express'
+import { swaggerDocument } from './docs/docs.js'
 
 const { writeFile, readFile } = promises
 
 const app = express()
 app.use(express.json())
 app.use('/account', accountsRouter)
+app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument))
 
 app.listen(3000, async() => {
     try {
