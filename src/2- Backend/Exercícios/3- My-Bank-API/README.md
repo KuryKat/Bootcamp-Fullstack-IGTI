@@ -16,7 +16,7 @@ It is as simple as it looks, starting from the point where you should already kn
 - Run ``npm install`` 
 - Run ``npm start``
 - Open This [Link](http://localhost:3000/docs)
-  - Read The Docs , yay! 😄🙌
+  - Read The Docs and have fun, yay! 😄🙌
 
 
 
