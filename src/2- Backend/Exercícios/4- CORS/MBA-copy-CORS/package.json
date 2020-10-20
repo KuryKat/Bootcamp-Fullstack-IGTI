@@ -1,0 +1,14 @@
+{
+    "name": "mba-cors",
+    "version": "1.0.0",
+    "description": "This is just a Simple API made for exercise the content learned in this Module",
+    "main": "index.js",
+    "author": "KuryKat",
+    "license": "MIT",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "winston": "^3.3.3"
+    },
+    "type": "module"
+}
