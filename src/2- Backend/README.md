@@ -1,7 +1,7 @@
 # Backend (APIs) Module
 This is the "API creation module", it has more to do with backend and server creation, but it was more focused on creating APIs because it is a bootcamp 🤷😂
 
-~~Honestly I would prefer that the topics about backend be deepened, I need to learn more about backend~~
+Okay, I change my mind, after finishing this module I learned a lot, I am very grateful for all the knowledge attributed to me, I rashly judged, it was my mistake, but what matters is that I learned a lot, thank you again!
 
 ## Contents taught:
 - [NodeJS](Exercícios/1-%20NODEJS/)
