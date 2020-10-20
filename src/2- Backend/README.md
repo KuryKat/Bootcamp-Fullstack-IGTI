@@ -1,7 +1,9 @@
 # Backend (APIs) Module
-This is the "API creation module", it has more to do with backend and server creation, but it was more focused on creating APIs because it is a bootcamp 🤷😂
+This is the API creation module, in it we learn the basic concepts up to the functionality of each HTTP request using ExpressJS and NodeJS, Everything we need to know to model and create a well structured backend (server) with all possible responses, since requests in JSON files until responses using static files and/or generate Documentation using Swagger, it was amazing!
 
-Okay, I change my mind, after finishing this module I learned a lot, I am very grateful for all the knowledge attributed to me, I rashly judged, it was my mistake, but what matters is that I learned a lot, thank you again!
+~~I removed my unnecessary comments, open letter below:~~
+
+I change my mind, after finishing this module I learned a lot, I am very grateful for all the knowledge attributed to me, I rashly judged, it was my mistake, but what matters is that I learned a lot, thank you again!
 
 ## Contents taught:
 - [NodeJS](Exercícios/1-%20NODEJS/)
