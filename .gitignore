@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# very useful for me but very useless for github:
+src/3-Frontend/utils/React-Tester/*
