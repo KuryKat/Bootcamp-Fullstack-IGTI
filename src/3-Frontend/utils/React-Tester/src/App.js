@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
+import ProjetoBase from './components/ProjetoBase/ProjetoBase';
 
-function App() {
-  return (
-    <div>Olá Mundo!</div>
-  );
+export default class App extends Component {
+  render() {
+    return <ProjetoBase />;
+  }
 }
-
-export default App;
