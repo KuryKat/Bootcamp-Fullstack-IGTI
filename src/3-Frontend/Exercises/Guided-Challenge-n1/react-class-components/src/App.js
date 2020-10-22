@@ -10,7 +10,7 @@ export default class App extends Component {
     }
 
     handleClick = () => {
-        const newClickArray = Object.assign(this.state.clickArray)
+        const newClickArray = Object.assign([], this.state.clickArray)
         newClickArray.push(getDate())
 
         this.setState({ clickArray: newClickArray })
