@@ -1,19 +1,19 @@
 function getDate() {
     const now = new Date()
-    let result = ""
+    let result = ''
 
     result += leftPad(now.getDate())
-    result += "/"
+    result += '/'
     result += leftPad(now.getMonth() + 1)
-    result += "/"
+    result += '/'
     result += now.getFullYear()
-    result += " - "
+    result += ' - '
     result += leftPad(now.getHours())
-    result += ":"
+    result += ':'
     result += leftPad(now.getMinutes())
-    result += ":"
+    result += ':'
     result += leftPad(now.getSeconds())
-    result += "."
+    result += '.'
     result += leftPad(now.getMilliseconds(), 3)
 
     return result

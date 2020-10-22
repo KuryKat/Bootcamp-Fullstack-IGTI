@@ -1,17 +1,19 @@
-(() => {
+;(() => {
     console.log(doSpread()) // Espalha os elementos em um Objeto novo
     console.log(doRest()) // Cria um array de parâmetros pra uma função
     console.log(doDestructuring()) // Desestrutura elementos de um Objeto
 })()
 
 function doSpread() {
-    const marriedMen = people.results.filter(person => person.name.title === "Mr")
-    const marriedWom = people.results.filter(person => person.name.title === "Ms")
+    const marriedMen = people.results.filter(
+        person => person.name.title === 'Mr'
+    )
+    const marriedWom = people.results.filter(
+        person => person.name.title === 'Ms'
+    )
 
     return [...marriedMen, ...marriedWom]
 }
-
-
 
 function doRest() {
     function infinitySum(...numbers) {

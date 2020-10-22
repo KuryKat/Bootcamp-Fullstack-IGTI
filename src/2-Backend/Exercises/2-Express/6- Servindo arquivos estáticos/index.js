@@ -1,4 +1,4 @@
-import express from 'express';
+import express from 'express'
 
 const app = express()
 app.use(express.json())
@@ -7,6 +7,6 @@ app.use(express.json())
 app.use(express.static('./images'))
 
 // Criando um "diretório" virtual
-app.use("/images", express.static('./images'))
+app.use('/images', express.static('./images'))
 
-app.listen(3000, console.log("YAY"))
+app.listen(3000, console.log('YAY'))

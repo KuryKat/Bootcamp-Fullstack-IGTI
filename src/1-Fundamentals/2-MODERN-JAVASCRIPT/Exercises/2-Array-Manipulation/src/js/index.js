@@ -1,4 +1,4 @@
-(() => {
+;(() => {
     console.log(doMap()) // Faz um novo Objeto mapeando pela condição no callback
     console.log(doFilter()) // Faz um novo Objeto removendo os objetos filtrados no callback
     console.log(doForEach()) // Faz um laço por cada um dos objetos executando uma função callback
@@ -9,12 +9,11 @@
     console.log(doSort()) // Ordena um Objeto por uma condição de ordenação (Default: String Organization)
 })()
 
-
 function doMap() {
     const nameEmailArray = people.results.map(person => {
         return {
             name: person.name,
-            email: person.email
+            email: person.email,
         }
     })
     return nameEmailArray
@@ -38,7 +37,6 @@ function doForEach() {
     return mappedPeople
 }
 
-
 function doReduce() {
     const totalAges = people.results.reduce((acc, curr) => {
         return acc + curr.dob.age
@@ -56,33 +54,38 @@ function doReduce() {
 }
 
 function doFind() {
-    const found = people.results.find(person => person.location.state === "Minas Gerais")
+    const found = people.results.find(
+        person => person.location.state === 'Minas Gerais'
+    )
     return found
 }
 
 function doSome() {
-    const found = people.results.some(person => person.location.state === "Amazonas")
+    const found = people.results.some(
+        person => person.location.state === 'Amazonas'
+    )
     return found
 }
 
-
 function doEvery() {
-    const every = people.results.every(person => person.nat === "BR")
+    const every = people.results.every(person => person.nat === 'BR')
     return every
 }
 
 function doSort() {
-    const mappedNames = people.results.map(person => {
-        return {
-            name: person.name.first
-        }
-    }).filter(person => person.name.startsWith("A"))
+    const mappedNames = people.results
+        .map(person => {
+            return {
+                name: person.name.first,
+            }
+        })
+        .filter(person => person.name.startsWith('A'))
 
     mappedNames.sort((a, b) => {
         //Por String
         return a.name.localeCompare(b.name)
-            // Por quantidade de Letras
-            // return a.name.length - b.name.length
+        // Por quantidade de Letras
+        // return a.name.length - b.name.length
     })
 
     return mappedNames

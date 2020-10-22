@@ -1,4 +1,4 @@
-(async() => {
+;(async () => {
     // fetch() // Forma Convencional
     // fetchAsync() // Forma Otimizada
 
@@ -12,12 +12,10 @@
     console.log(result)
 })()
 
-
 function fetch() {
-    fetch('https://api.github.com/users/kurykat')
-        .then(response => {
-            response.json().then(data => console.log(data))
-        })
+    fetch('https://api.github.com/users/kurykat').then(response => {
+        response.json().then(data => console.log(data))
+    })
 }
 
 async function fetchAsync() {
@@ -28,7 +26,7 @@ async function fetchAsync() {
 
 function divisionPromise(a, b) {
     return new Promise((resolve, reject) => {
-        if (b === 0) reject("Não é possível dividir por 0")
+        if (b === 0) reject('Não é possível dividir por 0')
         resolve(a / b)
     })
 }

@@ -1,13 +1,12 @@
-const colors = ["red", "green", "blue"]
-
-(() => {
-    const button = document.querySelector("#button")
+;(() => {
+    const colors = ['red', 'green', 'blue']
+    const button = document.querySelector('#button')
 
     button.addEventListener('click', () => {
-        const span = document.createElement("span")
+        const span = document.createElement('span')
 
-        span.innerHTML = "Olá Mundo"
-        document.querySelector("#conteiner").appendChild(span)
+        span.innerHTML = 'Olá Mundo'
+        document.querySelector('#conteiner').appendChild(span)
     })
 
     let redSelected = 0
@@ -16,9 +15,9 @@ const colors = ["red", "green", "blue"]
 
     setInterval(() => {
         function render() {
-            document.querySelector("#red").innerHTML = `R: ${redSelected}`
-            document.querySelector("#green").innerHTML = `G: ${greenSelected}`
-            document.querySelector("#blue").innerHTML = `B: ${blueSelected}`
+            document.querySelector('#red').innerHTML = `R: ${redSelected}`
+            document.querySelector('#green').innerHTML = `G: ${greenSelected}`
+            document.querySelector('#blue').innerHTML = `B: ${blueSelected}`
         }
 
         const spans = document.querySelectorAll('span')
@@ -29,22 +28,22 @@ const colors = ["red", "green", "blue"]
             item.style.color = selectedColor
 
             switch (selectedColor) {
-                case "red":
+                case 'red':
                     redSelected++
                     render()
-                    break;
-                case "green":
+                    break
+                case 'green':
                     greenSelected++
                     render()
-                    break;
-                case "blue":
+                    break
+                case 'blue':
                     blueSelected++
                     render()
-                    break;
+                    break
                 default:
-                    throw new Error("Deu algum erro impossível")
-                    break;
+                    throw new Error('Deu algum erro impossível')
+                    break
             }
         })
-    }, 500);
+    }, 500)
 })()

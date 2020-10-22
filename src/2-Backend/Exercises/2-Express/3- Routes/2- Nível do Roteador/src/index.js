@@ -1,9 +1,9 @@
 import express from 'express'
 
 const app = express()
-app.use(express.json());
+app.use(express.json())
 
-// MIDDLEWARES DO NÍVEL DO ROTEADOR 
+// MIDDLEWARES DO NÍVEL DO ROTEADOR
 // Para fazer um código mais organizado, bem mais legível
 // e deixar a index apenas inicializando as funções você pode criar Roteadores,
 // Roteadores são arquivos secundários (geralmente salvos dentro de uma pasta "routes")
@@ -14,4 +14,4 @@ import router from './routes/Simplerouter.js'
 
 app.use('/router', router)
 
-app.listen(3000, console.log("Started!"))
+app.listen(3000, console.log('Started!'))

@@ -1,14 +1,16 @@
-(async() => {
+;;(async () => {
     let favoriteCountries = []
 
-    let tabCountries = document.querySelector("#tabCountries")
-    let tabFavorites = document.querySelector("#tabFavorites")
+    let tabCountries = document.querySelector('#tabCountries')
+    let tabFavorites = document.querySelector('#tabFavorites')
 
-    let countCountries = document.querySelector("#countCountries")
-    let countFavorites = document.querySelector("#countFavorites")
+    let countCountries = document.querySelector('#countCountries')
+    let countFavorites = document.querySelector('#countFavorites')
 
-    let totalPopulationList = document.querySelector("#totalPopulationList")
-    let totalPopulationFavorites = document.querySelector("#totalPopulationFavorites")
+    let totalPopulationList = document.querySelector('#totalPopulationList')
+    let totalPopulationFavorites = document.querySelector(
+        '#totalPopulationFavorites'
+    )
 
     let numberFormat = Intl.NumberFormat('pt-BR')
 
@@ -17,24 +19,27 @@
 
     /**
      * Function that fetch all countries and returns an Object with only the needed informations
-     * @returns {{id: Number, name: String, population: Number, formattedPopulation: String, flag: String }} 
+     * @returns {{id: Number, name: String, population: Number, formattedPopulation: String, flag: String }}
      * @example async () => let countries = await fetchCountries()
      */
     async function fetchCountries() {
         const response = await fetch('https://restcountries.eu/rest/v2/all')
         const data = await response.json()
-        let preventNullValues = data.filter(country => country.numericCode !== null)
+        let preventNullValues = data.filter(
+            country => country.numericCode !== null
+        )
 
-        let allCountries = preventNullValues.map(({ numericCode, translations, population, flag }) => {
-            return {
-                id: numericCode,
-                name: translations.br,
-                population: population,
-                formattedPopulation: formatNumber(population, numberFormat),
-                flag: flag
+        let allCountries = preventNullValues.map(
+            ({ numericCode, translations, population, flag }) => {
+                return {
+                    id: numericCode,
+                    name: translations.br,
+                    population: population,
+                    formattedPopulation: formatNumber(population, numberFormat),
+                    flag: flag,
+                }
             }
-
-        })
+        )
         return allCountries
     }
 
@@ -112,7 +117,6 @@
             favoritesHTML += favoriteCountryHTML
         })
 
-
         favoritesHTML += `</div>`
         tabFavorites.innerHTML = favoritesHTML
     }
@@ -132,29 +136,39 @@
             return acc + curr.population
         }, 0)
 
-        totalPopulationList.textContent = formatNumber(totalPopulation, numberFormat)
-        totalPopulationFavorites.textContent = formatNumber(totalFavorites, numberFormat)
+        totalPopulationList.textContent = formatNumber(
+            totalPopulation,
+            numberFormat
+        )
+        totalPopulationFavorites.textContent = formatNumber(
+            totalFavorites,
+            numberFormat
+        )
     }
 
     /**
      * Handle with the Buttons to add and remove a favorite Country
      */
     function handleCountryButtons() {
-        const countryButtons = Array.from(tabCountries.querySelectorAll(".btn"))
-        const favoriteButtons = Array.from(tabFavorites.querySelectorAll(".btn"))
+        const countryButtons = Array.from(tabCountries.querySelectorAll('.btn'))
+        const favoriteButtons = Array.from(
+            tabFavorites.querySelectorAll('.btn')
+        )
 
         countryButtons.forEach(button => {
             button.addEventListener('click', () => addToFavorites(button.id))
         })
 
         favoriteButtons.forEach(button => {
-            button.addEventListener('click', () => removeFromFavorites(button.id))
+            button.addEventListener('click', () =>
+                removeFromFavorites(button.id)
+            )
         })
     }
 
     /**
      * Add a country in the FavoriteList
-     * @param {Number} id 
+     * @param {Number} id
      */
     function addToFavorites(id) {
         const countryToAdd = allCountries.find(country => country.id === id)
@@ -166,25 +180,28 @@
 
     /**
      * Remove a country from the FavoriteList
-     * @param {Number} id 
+     * @param {Number} id
      */
     function removeFromFavorites(id) {
-        const countryToRemove = favoriteCountries.find(country => country.id === id)
+        const countryToRemove = favoriteCountries.find(
+            country => country.id === id
+        )
         allCountries = [...allCountries, countryToRemove]
 
-        favoriteCountries = favoriteCountries.filter(country => country.id !== id)
+        favoriteCountries = favoriteCountries.filter(
+            country => country.id !== id
+        )
         render()
     }
 
     /**
      * Format a number according to the indicated Intl NumberFormat
-     * @param {Number} number 
-     * @param {Intl.NumberFormat} intlFormatter 
+     * @param {Number} number
+     * @param {Intl.NumberFormat} intlFormatter
      * @returns {String} The Formatted Number
      * @example formatNumber(10823, Intl.NumberFormat('pt-BR')) // => "10.823"
      */
     function formatNumber(number, intlFormatter) {
         return intlFormatter.format(number)
     }
-
 })()

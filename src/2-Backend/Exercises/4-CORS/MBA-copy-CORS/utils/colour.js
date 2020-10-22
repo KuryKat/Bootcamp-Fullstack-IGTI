@@ -5,34 +5,36 @@
  * @return {String}     coloured string for terminal printing
  */
 function colour(c, str) {
-    return (colour[c] || colour.black) + str + colour.black;
+    return (colour[c] || colour.black) + str + colour.black
 }
 
 function strip(str) {
-    re.lastIndex = 0; // reset position
-    return str.replace(re, '');
+    re.lastIndex = 0 // reset position
+    return str.replace(re, '')
 }
 
 // RGB in this "color table"
 // "\x1B[38;2;R;G;Bm"
 // Example:
-colour.lightgreen = "\x1B[38;2;0;255;0m"
+colour.lightgreen = '\x1B[38;2;0;255;0m'
 
-colour.BOLD = "\x1B[1m";
+colour.BOLD = '\x1B[1m'
 
-colour.red = '\x1B[31m';
-colour.green = '\x1B[32m';
-colour.blue = "\x1b[34m";
+colour.red = '\x1B[31m'
+colour.green = '\x1B[32m'
+colour.blue = '\x1b[34m'
 
-colour.yellow = '\x1B[33m';
-colour.magenta = "\x1b[35m";
-colour.cyan = "\x1b[36m";
-colour.white = "\x1b[37m";
-colour.black = '\x1B[39m';
+colour.yellow = '\x1B[33m'
+colour.magenta = '\x1b[35m'
+colour.cyan = '\x1b[36m'
+colour.white = '\x1b[37m'
+colour.black = '\x1B[39m'
 
-var reStr = Object.keys(colour).map(key => colour[key]).join('|');
-var re = new RegExp(('(' + reStr + ')').replace(/\[/g, '\\['), 'g');
+var reStr = Object.keys(colour)
+    .map(key => colour[key])
+    .join('|')
+var re = new RegExp(('(' + reStr + ')').replace(/\[/g, '\\['), 'g')
 
-colour.strip = strip;
+colour.strip = strip
 
-export { colour };
+export { colour }

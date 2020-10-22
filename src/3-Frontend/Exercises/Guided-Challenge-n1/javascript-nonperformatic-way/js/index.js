@@ -1,4 +1,4 @@
-(() => {
+;(() => {
     console.log('Heya!')
 
     const clickArray = []
@@ -11,7 +11,7 @@
 
     function render() {
         const ul = document.querySelector('#data')
-        ul.innerHTML = ""
+        ul.innerHTML = ''
 
         let lis = ''
 

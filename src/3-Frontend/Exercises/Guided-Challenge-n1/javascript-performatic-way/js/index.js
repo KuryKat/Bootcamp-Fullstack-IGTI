@@ -1,4 +1,4 @@
-(() => {
+;(() => {
     console.log('Heya!')
 
     const clickArray = []

@@ -1,1 +1,1 @@
-console.log('JavaScript em funcionamento!');
+console.log('JavaScript em funcionamento!')

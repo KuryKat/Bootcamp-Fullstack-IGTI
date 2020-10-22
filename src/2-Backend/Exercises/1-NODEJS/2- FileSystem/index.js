@@ -1,19 +1,21 @@
 // // PROMISES (BEST WAY)
 
-import { promises as fs } from "fs";
+import { promises as fs } from 'fs'
 
-(async() => {
+;(async () => {
     try {
-        await fs.writeFile("teste.txt", "bla bla bla", "utf-8")
-        await fs.appendFile("teste.txt", "\naksodfkosdfksofkoasd appended!", "utf-8")
-        const data = await fs.readFile("teste.txt", "utf-8")
+        await fs.writeFile('teste.txt', 'bla bla bla', 'utf-8')
+        await fs.appendFile(
+            'teste.txt',
+            '\naksodfkosdfksofkoasd appended!',
+            'utf-8'
+        )
+        const data = await fs.readFile('teste.txt', 'utf-8')
         console.log(data)
     } catch (err) {
         console.log(err)
     }
 })()
-
-
 
 // // PROMISES (PROMISES HELL)
 //
@@ -31,10 +33,8 @@ import { promises as fs } from "fs";
 //     })
 //     .catch(err => console.log(err));
 
-
-
 // // ASYNC
-// 
+//
 // import fs from "fs"
 //
 // console.log("1")
@@ -51,10 +51,8 @@ import { promises as fs } from "fs";
 // })
 // console.log("3")
 
-
-
 // // SYNC (NÃO RECOMENDADO EM APIs)
-// 
+//
 // import fs from "fs"
 //
 // try {
