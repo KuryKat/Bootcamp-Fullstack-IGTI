@@ -1,9 +1,18 @@
-const addClass = (element, theme) => {
-    element.classList.add(theme)
+const addClass = (element, className, callback = null) => {
+    element.classList.add(className)
+    if (callback !== null && typeof callback === 'function') return callback()
 }
 
-const removeClass = (element, theme) => {
-    element.classList.remove(theme)
+const removeClass = (element, className, callback = null) => {
+    element.classList.remove(className)
+    if (callback !== null && typeof callback === 'function') return callback()
 }
 
-export { addClass, removeClass }
+const changeClass = (element, oldclassName, newclassName, callback = null) => {
+    removeClass(element, oldclassName, () => {
+        addClass(element, newclassName)
+    })
+    if (callback !== null && typeof callback === 'function') return callback()
+}
+
+export { addClass, removeClass, changeClass }

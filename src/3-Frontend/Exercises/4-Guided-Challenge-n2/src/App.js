@@ -3,7 +3,7 @@ import { data } from './data/allCountries'
 import Countries from './components/Countries/Countries'
 import Header from './components/Header/Header'
 import SwitchButton from './components/SwitchButton/SwitchButton'
-import { addClass, removeClass } from './utils/styleFunctions'
+import { changeClass, addClass } from './utils/styleFunctions'
 
 export default class App extends Component {
     constructor() {
@@ -14,7 +14,7 @@ export default class App extends Component {
             filteredCountries: [],
             filteredPopulation: 0,
             filter: '',
-            theme: '🌞',
+            theme: '',
         }
     }
     calculatePopulationFrom = countries => {
@@ -59,6 +59,11 @@ export default class App extends Component {
             filteredCountries: allCountries,
             filteredPopulation,
         })
+
+        const body = document.querySelector('body')
+        addClass(body, 'light-theme', () => {
+            this.setState({ theme: '🌞' })
+        })
     }
 
     handleChangeFilter = newFilter => {
@@ -79,15 +84,13 @@ export default class App extends Component {
     handleChangeTheme = isChecked => {
         const body = document.querySelector('body')
         if (isChecked) {
-            this.setState({ theme: '🌚' })
-
-            removeClass(body, 'light-theme')
-            addClass(body, 'dark-theme')
+            changeClass(body, 'light-theme', 'dark-theme', () => {
+                this.setState({ theme: '🌚' })
+            })
         } else {
-            this.setState({ theme: '🌞' })
-
-            removeClass(body, 'dark-theme')
-            addClass(body, 'light-theme')
+            changeClass(body, 'dark-theme', 'light-theme', () => {
+                this.setState({ theme: '🌞' })
+            })
         }
     }
 
