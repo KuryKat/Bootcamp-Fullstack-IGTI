@@ -1,28 +1,23 @@
-import React, { useState } from 'react'
+import React from 'react'
 import css from './Counter.module.css'
 import { DecrementButton } from './DecrementButton'
 import { IncrementButton } from './IncrementButton'
 import { Steps } from './Steps'
 import { Value } from './Value'
 
-export default function Counter() {
-    const [currentCounter, setCurrentCounter] = useState(2)
-    const [steps, setSteps] = useState(0)
-
+export default function Counter(props) {
     const handleButtonClick = clickType => {
-        clickType === '+'
-            ? setCurrentCounter(currentCounter + 1)
-            : setCurrentCounter(currentCounter - 1)
-
-        setSteps(steps + 1)
+        const { onCount } = props
+        onCount(clickType)
     }
 
+    const { value, currentStep } = props
     return (
         <div className={css.counterContainer}>
             <DecrementButton onDecrement={handleButtonClick} />
-            <Value value={currentCounter} />
+            <Value value={value} />
             <IncrementButton onIncrement={handleButtonClick} />
-            <Steps currentStep={steps} />
+            <Steps currentStep={currentStep} />
         </div>
     )
 }
