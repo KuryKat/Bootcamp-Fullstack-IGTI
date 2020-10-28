@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export function SwitchButton({ onToggle, description }) {
+export default function SwitchButton({ onToggle, description }) {
     const handleChange = ({ target: { checked } }) => {
         onToggle(checked)
     }
