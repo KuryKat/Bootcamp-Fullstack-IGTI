@@ -10,9 +10,9 @@ Hello, you must already know me, I am KuryKat, an independent developer, looking
 This repository was built with the intent of "documenting" my achievements and learning from Bootcamp, I have a repository for everything I learn, but I keep it private (for now, I intend to organize them and make them public)
 
 ## Bootcamp modules
-- [x] [Fundamentals](src/1-%20Fundamentos/)
-- [x] [API development](src/2-%20Backend/)
-- [ ] Frontend with React
+- [x] [Fundamentals](src/1-Fundamentals/)
+- [x] [API development](src/2-Backend/)
+- [ ] [Frontend with React](src/3-Frontend/)
 - [ ] Data persistence, Code Versioning and Deployment
 - [ ] Final Challenge
 
