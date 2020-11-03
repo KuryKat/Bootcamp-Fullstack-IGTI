@@ -105,3 +105,6 @@ dist
 
 # very useful for me but very useless for github:
 src/3-Frontend/utils/React-Tester/*
+
+# data from MongoDB
+src/4-Database-Git/data/*
