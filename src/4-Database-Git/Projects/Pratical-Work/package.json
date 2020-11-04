@@ -1,5 +1,5 @@
 {
-    "name": "api-exercise",
+    "name": "pratical-work",
     "version": "1.0.0",
     "main": "src/server.js",
     "author": "KuryKat",
@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "express": "^4.17.1",
-        "mongoose": "^5.10.11"
+        "mongoose": "^5.10.11",
+        "winston": "^3.3.3"
     }
 }
