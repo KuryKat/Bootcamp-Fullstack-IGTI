@@ -1,0 +1,15 @@
+{
+    "name": "api-exercise",
+    "version": "1.0.0",
+    "main": "server.js",
+    "author": "KuryKat",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "start": "nodemon src/server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongoose": "^5.10.11"
+    }
+}

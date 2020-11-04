@@ -1,0 +1,13 @@
+{
+    "name": "mongodb-exercise",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "KuryKat",
+    "license": "MIT",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "mongodb": "^3.6.2"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "mongoose-exercise",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "KuryKat",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "mongoose": "^5.10.11"
+    }
+}
