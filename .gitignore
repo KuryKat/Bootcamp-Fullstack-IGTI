@@ -108,3 +108,4 @@ src/3-Frontend/utils/React-Tester/*
 
 # data from MongoDB
 src/4-Database-Git/data/*
+src/4-Database-Git/Exercises/4-Learning-Git/
